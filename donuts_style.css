@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(to left,white, pink);
+}
+
+.donuts{
+    position: absolute;
+    margin-top: 11%;
+    width:350px;
+    height:350px;
+    background: white;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at top,rgb(207, 158, 98),rgb(61, 44, 22));
+    transform: perspective(500px) rotateX(45deg);
+    overflow: hidden;
+}
+
+.hole{
+    position: absolute;
+    width: 81px;
+    height: 71.6px;
+    margin-left:38%;
+    margin-top:38.19%;
+    border-radius: 50%;
+    background: radial-gradient(circle at top,white,pink);
+    
+}
+
+.hole_volume{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left:123px;
+    margin-top: 105px;
+    border-radius: 50%;
+    background: radial-gradient(circle at top,rgb(207, 158, 98),rgb(61, 44, 22));
+    overflow: hidden; 
+}
+
+
+.candy{
+    position: absolute;
+    margin-top: -18px;
+    width:350px;
+    height:350px;
+    background: pink;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at top,pink,rgb(109, 54, 95));
+}
+
