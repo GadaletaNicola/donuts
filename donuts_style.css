@@ -9,11 +9,14 @@ body{
     margin-top: 11%;
     width:350px;
     height:350px;
-    background: white;
+    background: rgb(173, 132, 80);
     border-radius: 50%;
     border-bottom:1px solid rgb(61, 44, 22);
-    background-image: radial-gradient(circle at top,rgb(207, 158, 98),rgb(61, 44, 22));
+    background-image: radial-gradient(circle at top,rgb(173, 132, 80),rgb(61, 44, 22));
     transform: perspective(500px) rotateX(45deg);
+    transform-style: preserve-3d;
+    -webkit-animation: Dshine 5s cubic-bezier(.46,0,.59,1) 5s infinite;
+    animation:Dshine 5s cubic-bezier(.46,0,.59,1) 5s infinite;
     overflow: hidden;
 }
 
@@ -24,7 +27,7 @@ body{
     margin-left:38%;
     margin-top:38.19%;
     border-radius: 50%;
-    
+    transform-style: preserve-3d;
     background: radial-gradient(circle at top,white,pink);
 }
 
@@ -35,7 +38,10 @@ body{
     margin-left:123px;
     margin-top: 105px;
     border-radius: 50%;
-    background: radial-gradient(circle at top,rgb(207, 158, 98),rgb(61, 44, 22));
+    transform-style: preserve-3d;
+    animation: Hshine 5s cubic-bezier(.46,0,.59,1) 5s infinite;
+    -webkit-animation: Hshine 5s cubic-bezier(.46,0,.59,1) 5s infinite;
+    background: radial-gradient(circle at top,rgb(173, 132, 80),rgb(61, 44, 22));
     overflow: hidden; 
 }
 
@@ -48,6 +54,10 @@ body{
     background: pink;
     border:1px solid rgb(109, 54, 95);
     border-radius: 50%;
+    transform-style: preserve-3d;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    animation:Cshine 5s cubic-bezier(.46,0,.59,1) 5s infinite;
+    -webkit-animation:Cshine 5s cubic-bezier(.46,0,.59,1) 5s infinite;
     background-image: radial-gradient(circle at top,pink,rgb(109, 54, 95));
 }
 
@@ -57,6 +67,7 @@ body{
     height: 300px;
     background: transparent;
     border: 1px solid rgb(219, 13, 13);
+    transform-style: preserve-3d;
     box-shadow: 0 2px 4px rgb(134, 6, 6),inset 0 1px 4px red;
     border-radius: 50%;
 
@@ -97,6 +108,83 @@ body{
 
 }
 
+
+@keyframes Dshine {
+    0%{
+       background: radial-gradient(circle at top,rgb(173, 132, 80),rgb(61, 44, 22));
+       
+    }
+
+    2%{
+        background: radial-gradient(circle at right,rgb(173, 132, 80),rgb(61, 44, 22));
+    }
+
+    4%{
+        background: radial-gradient(circle at bottom,rgb(173, 132, 80),rgb(61, 44, 22));
+    }
+
+   5%{
+        background: radial-gradient(circle at left,rgb(173, 132, 80),rgb(61, 44, 22));
+    }
+
+    6%{
+        background: radial-gradient(circle at top,rgb(173, 132, 80),rgb(61, 44, 22));
+    }
+
+    
+}
+
+
+@keyframes Cshine {
+    0%{
+       background: radial-gradient(circle at top,pink,rgb(109, 54, 95));
+       
+    }
+
+    2%{
+        background:radial-gradient(circle at right,pink,rgb(109, 54, 95));
+    }
+
+    4%{
+        background: radial-gradient(circle at bottom,pink,rgb(109, 54, 95));
+    }
+
+   5%{
+        background: radial-gradient(circle at left,pink,rgb(109, 54, 95));
+    }
+
+    6%{
+        background:radial-gradient(circle at top,pink,rgb(109, 54, 95));
+    }
+
+    
+}
+
+
+@keyframes Hshine {
+    0%{
+        background: radial-gradient(circle at top,rgb(173, 132, 80),rgb(61, 44, 22));
+       
+    }
+
+    2%{
+        background: radial-gradient(circle at right,rgb(173, 132, 80),rgb(61, 44, 22));
+    }
+
+    4%{
+        background: radial-gradient(circle at bottom,rgb(173, 132, 80),rgb(61, 44, 22));
+    }
+
+   5%{
+    background: radial-gradient(circle at left,rgb(173, 132, 80),rgb(61, 44, 22));
+    }
+
+    6%{
+        background: radial-gradient(circle at top,rgb(173, 132, 80),rgb(61, 44, 22));
+    }
+
+    
+}
 
 /*Implementazre rotazione*/
 
