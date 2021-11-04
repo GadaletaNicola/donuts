@@ -108,33 +108,6 @@ body{
 
 }
 
-
-@keyframes Dshine {
-    0%{
-       background: radial-gradient(circle at top,rgb(173, 132, 80),rgb(61, 44, 22));
-       
-    }
-
-    2%{
-        background: radial-gradient(circle at right,rgb(173, 132, 80),rgb(61, 44, 22));
-    }
-
-    4%{
-        background: radial-gradient(circle at bottom,rgb(173, 132, 80),rgb(61, 44, 22));
-    }
-
-   5%{
-        background: radial-gradient(circle at left,rgb(173, 132, 80),rgb(61, 44, 22));
-    }
-
-    6%{
-        background: radial-gradient(circle at top,rgb(173, 132, 80),rgb(61, 44, 22));
-    }
-
-    
-}
-
-
 @keyframes Cshine {
     0%{
        background: radial-gradient(circle at top,pink,rgb(109, 54, 95));
